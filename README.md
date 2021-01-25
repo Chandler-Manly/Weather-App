@@ -1,9 +1,9 @@
-# Weather-App
+# 
 # Project Overview
 
 ## Project Name
 
-The name of your project.
+Weather-App
 
 ## Project Description
 
@@ -11,41 +11,32 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}
+
 
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
-
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+ 
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
+-allow user to input desired zip code
+-retrieve current weather data from 3rd party api
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
-
-- Add second API
-- Use local storage to save user favorites
+- add a second form so users can compare two different zip codes
+- have the background update based on current weather conditions
+- build in logic for app to make attire recommendations
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
-|---|---| ---|
+
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Jan 26| Project Approval | Incomplete
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28| Initial Clickable Model  | Incomplete
+|Jan 28| Review Async /Axios lecture and create zip code form  | Incomplete
 |Jan 29| MVP | Incomplete
 |Feb 1| Presentations/Project Submission | Incomplete
 
