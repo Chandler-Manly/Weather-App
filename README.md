@@ -8,6 +8,13 @@ Use this section to describe your final project and perhaps any links to relevan
 ## API and Data Sample
 
 api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}
+Endpoint:
+- Please, use the endpoint api.openweathermap.org for your API calls
+- Example of API call:
+- api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=7978f186187864ed7fc387296b8ece2c
+
+Useful links:
+- API documentation https://openweathermap.org/api
 
 
 ## Wireframes
