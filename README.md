@@ -11,7 +11,7 @@ api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 Useful links:
 - API documentation https://openweathermap.org/api
-{
+
     "coord": {
         "lon": -71.0598,
         "lat": 42.3584
@@ -54,7 +54,7 @@ Useful links:
     "id": 4930956,
     "name": "Boston",
     "cod": 200
-}
+
 
 ## Wireframes
 
