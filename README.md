@@ -79,9 +79,9 @@
 
 |  Day | Deliverable | Status |
 | --- | :---: |  :---: |
-|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-|Jan 26| Project Approval | Incomplete |
-|Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete |
+|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
+|Jan 26| Project Approval | Complete |
+|Jan 27| Core Application Structure (HTML, CSS, etc.) | Complete |
 |Jan 28| Review Async /Axios lecture and create form  | Incomplete |
 |Jan 29| MVP | Incomplete |
 |Feb 1| Presentations/Project Submission | Incomplete |
