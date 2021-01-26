@@ -97,12 +97,13 @@ Useful links:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
+| Review class lessons on API and Async Functions | H | 3hrs| ??? | ??? |
 | Create HTML, CSS, and Javascript files | H | 3hrs| ??? | ??? |
-| Create async function and fetch weather data from api  | H | 3hrs| ??? | ??? |
-| Add weather-specific images  | H | 3hrs| ??? | ??? |
-| Basic styling with CSS and flex-box | L | 3hrs| ??? | ??? |
+| Create async function and fetch weather data from api  | H | 4hrs| ??? | ??? |
+| Add weather-specific images  | L | 3.5hrs| ??? | ??? |
+| Basic styling with CSS and flex-box | L | 4.5hrs| ??? | ??? |
 | Advanced styling: image display and removal | H | 3hrs| ??? | ??? |
-| Total | H | 15hrs| ??? | ??? |
+| Total | H | 21hrs| ??? | ??? |
 
 ## Code Snippet
 
