@@ -101,7 +101,7 @@ Useful links:
 | Add weather-specific images  | H | 3hrs| ??? | ??? |
 | Basic styling with CSS and flex-box | L | 3hrs| ??? | ??? |
 | Advanced styling: image display and removal | H | 3hrs| ??? | ??? |
-| Total | H | 21hrs| ??? | ??? |
+| Total | H | 15hrs| ??? | ??? |
 
 ## Code Snippet
 
