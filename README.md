@@ -58,7 +58,11 @@ Useful links:
 
 ## Wireframes
 
-- Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+- Weather-App across the banner 
+- Text-box to scroll through city names 
+- Search button 
+- Designated area for rendered list
+- Miro Link: ()[https://miro.com/app/board/o9J_lXQi7mo=/]
  
 
 #### MVP 
@@ -91,15 +95,12 @@ Useful links:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create HTML, CSS, and Javascript files | H | 3hrs| 3.5hrs | 3.5hrs |
-| Create async function and fetch weather data from api  | H | 3hrs| 2.5hrs | 2.5hrs |
-| Add weather-specific images  | H | 3hrs| 2.5hrs | 2.5hrs |
-| Basic styling with CSS and flex-box | L | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Create HTML, CSS, and Javascript files | H | 3hrs| ??? | 3.5hrs |
+| Create async function and fetch weather data from api  | H | 3hrs| ??? | ??? |
+| Add weather-specific images  | H | 3hrs| ??? | ??? |
+| Basic styling with CSS and flex-box | L | 3hrs| ??? | ??? |
+| Advanced styling: image display and removal | H | 3hrs| ??? | ??? |
+| Total | H | 6hrs| ??? | ??? |
 
 ## Code Snippet
 
