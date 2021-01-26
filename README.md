@@ -78,7 +78,7 @@
 ## Project Schedule
 
 |  Day | Deliverable | Status |
-
+| --- | :---: |  :---: |
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
 |Jan 26| Project Approval | Incomplete |
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete |
