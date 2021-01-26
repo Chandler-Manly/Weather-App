@@ -66,7 +66,7 @@ Useful links:
  
 
 #### MVP 
-- allow user to input desired zip code
+- allow user to input desired city name
 - retrieve current weather data from 3rd party api
 
 
@@ -84,7 +84,7 @@ Useful links:
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Jan 26| Project Approval | Incomplete
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28| Review Async /Axios lecture and create zip code form  | Incomplete
+|Jan 28| Review Async /Axios lecture and create form  | Incomplete
 |Jan 29| MVP | Incomplete
 |Feb 1| Presentations/Project Submission | Incomplete
 
