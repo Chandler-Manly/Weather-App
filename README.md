@@ -75,6 +75,7 @@ Useful links:
 - have the background update based on current weather conditions
 - build in logic for app to make attire recommendations
 - update weather image based on result
+- add additional feature like 5- and 16-day forecasts
 
 
 ## Project Schedule
