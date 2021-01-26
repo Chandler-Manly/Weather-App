@@ -62,9 +62,9 @@ Upload images of your wireframes to an image hosting site or add them to an asse
  
 
 #### MVP 
--allow user to input desired zip code
--retrieve current weather data from 3rd party api
--update weather image based on result
+- allow user to input desired zip code
+- retrieve current weather data from 3rd party api
+- update weather image based on result
 
 
 #### PostMVP  
