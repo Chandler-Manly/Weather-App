@@ -62,7 +62,7 @@ Useful links:
 - Text-box to scroll through city names 
 - Search button 
 - Designated area for rendered list
-- Miro Link: ()[https://miro.com/app/board/o9J_lXQi7mo=/]
+- (Link)[https://miro.com/app/board/o9J_lXQi7mo=/]
  
 
 #### MVP 
