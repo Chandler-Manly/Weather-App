@@ -64,7 +64,7 @@
 
 #### MVP 
 - Allow user to input desired city name
-- Retrieve current weather data from 3rd party api
+- Retrieve current weather data from 3rd party API
 
 
 #### PostMVP  
@@ -115,4 +115,3 @@ function reverse(string) {
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes. 
-- Did you read all of the directions before starting? If so write git commit -m "gleam like a sapphire" instead of git commit -m "first commit" for your first commit.
