@@ -77,7 +77,7 @@
 
 ## Project Schedule
 
-|  Day | Deliverable | Status
+|  Day | Deliverable | Status |
 
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
 |Jan 26| Project Approval | Incomplete |
