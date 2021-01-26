@@ -96,7 +96,7 @@ Useful links:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create HTML, CSS, and Javascript files | H | 3hrs| ??? | 3.5hrs |
+| Create HTML, CSS, and Javascript files | H | 3hrs| ??? | ??? |
 | Create async function and fetch weather data from api  | H | 3hrs| ??? | ??? |
 | Add weather-specific images  | H | 3hrs| ??? | ??? |
 | Basic styling with CSS and flex-box | L | 3hrs| ??? | ??? |
