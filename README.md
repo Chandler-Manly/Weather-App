@@ -68,13 +68,14 @@ Useful links:
 #### MVP 
 - allow user to input desired zip code
 - retrieve current weather data from 3rd party api
-- update weather image based on result
 
 
 #### PostMVP  
 - add a second form so users can compare two different zip codes
 - have the background update based on current weather conditions
 - build in logic for app to make attire recommendations
+- update weather image based on result
+
 
 ## Project Schedule
 
