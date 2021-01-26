@@ -56,7 +56,7 @@
 ## Wireframes
 
 - Weather-App across the banner 
-- Text-box to scroll through city names 
+- Text-box to input city names 
 - Search button 
 - Designated area for rendered list
 - (Link)[https://miro.com/app/board/o9J_lXQi7mo=/]
