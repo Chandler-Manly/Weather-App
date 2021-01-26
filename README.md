@@ -58,7 +58,7 @@ Useful links:
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+- Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
  
 
 #### MVP 
@@ -86,15 +86,18 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 ## Priority Matrix
 
 
+
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Create HTML, CSS, and Javascript files | H | 3hrs| 3.5hrs | 3.5hrs |
+| Create async function and fetch weather data from api  | H | 3hrs| 2.5hrs | 2.5hrs |
+| Add weather-specific images  | H | 3hrs| 2.5hrs | 2.5hrs |
+| Basic styling with CSS and flex-box | L | 3hrs| 2.5hrs | 2.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
