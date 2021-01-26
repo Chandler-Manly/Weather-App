@@ -3,7 +3,7 @@
 
 ## Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Weather-App allows users to input their city name and retrieve current weather information. 
 
 ## API and Data Sample
 
@@ -85,7 +85,6 @@ Upload images of your wireframes to an image hosting site or add them to an asse
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
 
 ## Timeframes
 
