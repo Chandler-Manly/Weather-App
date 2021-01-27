@@ -1,22 +1,57 @@
 // async function from third party api
-// 7978f186187864ed7fc387296b8ece2c
+// API Key: 7978f186187864ed7fc387296b8ece2c
+// get correct urls:
+// Endpoint: api.openweathermap.org
+// API Call By City Name: api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} 
+// /data/2.5/weather?q=Boston&appid=7978f186187864ed7fc387296b8ece2c
 
-// 
-// 
-const getWeather = async () => {
+const getCity = async () => {
   try {
-    let response = await axios.get(`api.openweathermap.org/data/2.5/weather?q=Boston&appid=7978f186187864ed7fc387296b8ece2c`)
+    let response = await axios.get(`https://cors-anywhere.herokuapp.com/api.openweathermap.org`)
     // console.log(response.data)
-    let weatherCurrent = Object.keys(response.data.message)
-    // console.log(weatherCurrent)
-    getOptions(weatherCurrent)
+    let cityList = Object.keys(response.data)
+    // console.log(cityList)
+    getOptions(cityList)
   } catch (error) {
     console.log(error)
   }
 }
 
+getCity()
 
-getWeather()
+const getOptions = (list) => {
+  // console.log(list)
+  let select = document.querySelector('#city-name')
+  // console.log(select)
+  list.forEach(city => {
+    let option = document.createElement('option')
+
+
+
+  })
+}
+
+
+
+
+
+
+
+
+
+// const getWeather = async () => {
+//   try {
+//     let response = await axios.get(`api.openweathermap.org / data / 2.5 / weather ? q = Boston & appid=7978f186187864ed7fc387296b8ece2c`)
+//     // console.log(response.data)
+//     let weatherCurrent = Object.keys(response.data.message)
+//     // console.log(weatherCurrent)
+//     getOptions(weatherCurrent)
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
+
+// getWeather()
 
 
 // const getOptions = (list) => {

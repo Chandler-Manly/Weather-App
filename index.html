@@ -4,18 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src defer="app.js"></script>
-  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="./app.js"></script>
+  <title>Weather-App</title>
 </head>
 
 <body>
-  <h1>Weather-App</h1>
+  <h1>Weather-App</h1><br>
   <form>
-    <label for="cityname">City Name:</label><br>
-    <input type="text" name="cityName" id="cityName"><br>
+    <input type="text" name="cityName" id="city-name"><br>
+    <option value="Select a city">Select a wonderful city</option>
+    <button>Search</button>
   </form>
-  <button>Search</button>
+  <div id='append-city'></div>
+  <footer>General Assembly P1</footer>
 </body>
 
 
