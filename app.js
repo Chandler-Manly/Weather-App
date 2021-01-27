@@ -1,13 +1,18 @@
-// async function from third party api
 // API Key: 7978f186187864ed7fc387296b8ece2c
-// get correct urls:
 // Endpoint: api.openweathermap.org
 // API Call By City Name: api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} 
-// /data/2.5/weather?q=Boston&appid=7978f186187864ed7fc387296b8ece2c
+
+const DOMAIN = 'api.openweathermap.org/data/2.5/weather?q=';
+const API_KEY = /* 7978f186187864ed7fc387296b8ece2c */
+  let CITY_NAME = 'boston'
+const BASE_URL = `${DOMAIN}q=${CITY_NAME}&appid=${API_KEY}`;
+
+
+
 
 const getCity = async () => {
   try {
-    let response = await axios.get(`https://cors-anywhere.herokuapp.com/api.openweathermap.org`)
+    let response = await axios.get(BASE_URL)
     // console.log(response.data)
     let cityList = Object.keys(response.data)
     // console.log(cityList)
@@ -31,7 +36,8 @@ const getOptions = (list) => {
   })
 }
 
-
+const button = document.querySelector('button')
+button.addEventListener('click', getCity)
 
 
 
