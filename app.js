@@ -1,66 +1,36 @@
-const API_KEY = '7978f186187864ed7fc387296b8ece2c'
-const CITY_NAME = 'Atlanta'
+// const API_KEY = '7978f186187864ed7fc387296b8ece2c'
+const API_KEY_TWO = '1a012b94443d511ac871535b64ac2706'
+
 
 const getCity = async () => {
   try {
-    let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${API_KEY}`)
+    const CITY_NAME = document.querySelector('#city-name')
+    let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME.value}&units=imperial&appid=${API_KEY_TWO}`)
     // console.log(response)
-    let cityList = Object(response.data.main.temp)
-    console.log(cityList)
+    let weatherData = response.data.main
+    // console.log(weatherData)
   } catch (error) {
     console.log(error)
   }
-}
-
-getCity()
-
-const getOptions = (list) => {
-  // console.log(list)
-  let select = document.querySelector('#city-name')
-  console.log(select)
-  list.forEach(city => {
-    let option = document.createElement('option')
-    option.value = city
-    option.textContent = city
-    // console.log(option)
-    select.append(option)
-  })
 }
 
 const getValue = (e) => {
   e.preventDefault()
-  let optionValue = document.querySelector('#city-name').value
-  // console.log(optionValue)
-  removeWeather()
-  getCity(optionValue)
+  getCity()
+}
+
+
+function showWeatherData(response.data.main) {
+  const weatherInfo = `<h2> City Name: ${data.name}</h2>`
+  let dataContainer = document.querySelector('#append-weather')
+  dataContainer.insertAdjacentHTML('beforeend', weatherInfo)
 }
 
 const form = document.querySelector('form')
-
 form.addEventListener('submit', getValue)
 
-const getWeather = async (weather) => {
-  try {
-    let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&appid=${API_KEY}`)
-    // console.log(response)
-    getWeather(response)
-  } catch (error) {
-    console.log(error)
-  }
-}
+showWeatherData()
 
-getWeather()
-
-const currentWeather = (city) => {
-  let weatherData = document.createElement('p')
-  image.src = weather
-  let div = document.querySelector('#append-weather')
-  div.append(image)
-}
-
-const removeWeather = () => {
-  let weatherDiv = document.querySelector('#append-weather')
-  while (weatherDiv.lastChild) {
-    weatherDiv.removeChild(weatherDiv.lastChild)
-  }
-}
+// removeWeatherData (){}
+// write code here 
+// make sure to call function 

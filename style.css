@@ -4,7 +4,7 @@ body {
   align-items: column-reverse;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  color: D8F3DC;
+  background-color: D8F3DC;
 }
 
 h1 {
