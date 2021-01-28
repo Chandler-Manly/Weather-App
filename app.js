@@ -3,9 +3,9 @@ const CITY_NAME = 'Atlanta'
 
 const getCity = async () => {
   try {
-    let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&appid=${API_KEY}`)
+    let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${CITY_NAME}&units=metric&appid=${API_KEY}`)
     // console.log(response)
-    let cityList = Object(response.data)
+    let cityList = Object(response.data.main.temp)
     console.log(cityList)
   } catch (error) {
     console.log(error)
@@ -37,7 +37,7 @@ const getValue = (e) => {
 
 const form = document.querySelector('form')
 
-form.addEventListener('search', getValue)
+form.addEventListener('submit', getValue)
 
 const getWeather = async (weather) => {
   try {
