@@ -93,7 +93,7 @@
 ## Timeframes
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: |
 | Create HTML, CSS, and Javascript files and Pseudo-Code Logic | H | 4 hrs| ??? |
 | Create async function and fetch weather data from api  | H | 5hrs| ??? |
 | Add weather-specific images  | L | 4.5hrs| ??? |
