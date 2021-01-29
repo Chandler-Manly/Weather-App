@@ -18,6 +18,11 @@ footer {
   align-content: flex-end;
 }
 
+img {
+  border-radius: 50%;
+  
+}
+
 /* 
 Colors: 
 D8F3DC
