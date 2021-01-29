@@ -17,10 +17,10 @@ const getCity = async () => {
 
 getCity()
 
-const getValue = (e) => {
-  e.preventDefault()
-  getCity()
-}
+// const getValue = (e) => {
+//   e.preventDefault()
+//   getCity()
+// }
 
 const button = document.querySelector('button')
 button.addEventListener('click', getCity)
