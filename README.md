@@ -82,8 +82,8 @@
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
 |Jan 26| Project Approval | Complete |
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Complete |
-|Jan 28| Review Async /Axios lecture and create form  | Incomplete |
-|Jan 29| MVP | Incomplete |
+|Jan 28| Review Async /Axios lecture and create form  | Complete |
+|Jan 29| MVP | Complete |
 |Feb 1| Presentations/Project Submission | Incomplete |
 
 ## Priority Matrix
@@ -92,26 +92,36 @@
 
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create HTML, CSS, and Javascript files and Pseudo-Code Logic | H | 4 hrs| ??? | ??? |
-| Create async function and fetch weather data from api  | H | 5hrs| ??? | ??? |
-| Add weather-specific images  | L | 4.5hrs| ??? | ??? |
-| Basic styling with CSS and flex-box | L | 4.5hrs| ??? | ??? |
-| Advanced styling: image display and removal | H | 5hrs| ??? | ??? |
-| Add content to HTML tags | L | 4.5hrs| ??? | ??? |
-| Pseudo-code Recommendation Logic in JS | L | 4.5hrs| ??? | ??? |
-| Total | H | 32hrs| ??? | ??? |
+| Create HTML, CSS, and Javascript files and Pseudo-Code Logic | H | 4 hrs| ??? |
+| Create async function and fetch weather data from api  | H | 5hrs| ??? |
+| Add weather-specific images  | L | 4.5hrs| ??? |
+| Basic styling with CSS and flex-box | L | 4.5hrs| ??? |
+| Advanced styling: image display and removal | H | 5hrs| ??? |
+| Add content to HTML tags | L | 4.5hrs| ??? |
+| Pseudo-code Recommendation Logic in JS | L | 4.5hrs| ??? |
+| Total | H | 32hrs| ??? |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+const API_KEY_TWO = '1a012b94443d511ac871535b64ac2706'
+const input = document.querySelector('input')
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
+let appendWeather = document.getElementById('append-weather')
+
+const getCity = async () => {
+  try {
+    let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${API_KEY_TWO}`)
+    console.log(response)
+    let weatherData = response.data.main
+    appendWeather.innerHTML += `<div>The temperature in ${input.value} is ${weatherData.temp + `°F`}</div>`
+  } catch (error) {
+    console.log(error)
+  }
 }
-```
+
+getCity()
 
 ## Change Log
  Use this section to document what changes were made and the reasoning behind those changes. 
