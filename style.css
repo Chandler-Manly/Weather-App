@@ -52,6 +52,14 @@ footer {
   text-align: center;
   color: #a9d6e5;
 }
+
+
+#footer-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 /* main {
   flex:1;
   display: flex;
