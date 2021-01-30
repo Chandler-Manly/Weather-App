@@ -94,14 +94,14 @@
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Create HTML, CSS, and Javascript files and Pseudo-Code Logic | H | 4 hrs| ??? |
-| Create async function and fetch weather data from api  | H | 5hrs| ??? |
-| Add weather-specific images  | L | 4.5hrs| ??? |
+| Create HTML, CSS, and Javascript files and Pseudo-Code Logic | H | 4 hrs| 3 hrs |
+| Create async function and fetch weather data from api  | H | 5hrs| 12hrs |
+| Add weather-specific images  | L | 4.5hrs| .5hr |
 | Basic styling with CSS and flex-box | L | 4.5hrs| ??? |
-| Advanced styling: image display and removal | H | 5hrs| ??? |
-| Add content to HTML tags | L | 4.5hrs| ??? |
-| Pseudo-code Recommendation Logic in JS | L | 4.5hrs| ??? |
-| Total | H | 32hrs| ??? |
+| Advanced styling: image display and removal | H | 5hrs| 3hrs |
+| Add content to HTML tags | L | 4.5hrs| 3hrs |
+| Pseudo-code Recommendation Logic in JS | L | 4.5hrs| 3hrs |
+| Total | H | 32hrs| 29hrs |
 
 ## Code Snippet
 
@@ -124,4 +124,5 @@ const getCity = async () => {
 getCity()
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes. 
+- Included more weather data to each search request 
+- Added additional media query to account for tablets (e.g. Ipads)
