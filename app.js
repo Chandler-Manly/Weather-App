@@ -11,10 +11,12 @@ const getCity = async () => {
     console.log(response)
     let weatherData = response.data.main
     appendWeather.innerHTML += `<div> City Name: ${input.value}</div>`;
-    appendWeather.innerHTML += `<div> Current Temp: ${weatherData.temp}°F</div>`;
-    appendWeather.innerHTML += `<div> Feels like: ${weatherData.feels_like}°F</div>`;
-    appendWeather.innerHTML += `<div> High: ${weatherData.temp_max}°F</div>`;
-    appendWeather.innerHTML += `<div> Low: ${weatherData.temp_min}°F</div>`;
+
+    //  Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
+    appendWeather.innerHTML += `<div> Current Temp: ${Math.round(weatherData.temp)}°F</div>`;
+    appendWeather.innerHTML += `<div> Feels like: ${Math.round(weatherData.feels_like)}°F</div>`;
+    appendWeather.innerHTML += `<div> High: ${Math.round(weatherData.temp_max)}°F</div>`;
+    appendWeather.innerHTML += `<div> Low: ${Math.round(weatherData.temp_min)}°F</div>`;
   } catch (error) {
     console.log(error)
   }
