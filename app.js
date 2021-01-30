@@ -33,5 +33,17 @@ function removeWeatherData() {
   }
 }
 
-
+// ###Weather-Attire Recommendation###
+// if (`${weatherData.feels_like}` > 80) {
+//   console.log("Suns out guns out!")
+// } else if (`${weatherData.feels_like}` > 60 || `${weatherData.feels_like}` < 79){
+//   console.log('light jacket')
+// } else if (`${weatherData.feels_like}` > 40 || `${weatherData.feels_like}` < 59){
+//   console.log('cardigan and scarf')
+// } else if (`${weatherData.feels_like}` > 20 || `${weatherData.feels_like}` < 39){
+//   console.log('peacoat')
+// } else if (`${weatherData.feels_like}` > 0 || `${weatherData.feels_like}` < 19){
+//   console.log('Canada Goose')
+// } else {
+// console.log ('Yup it's freezing, bundle up!')}
 
