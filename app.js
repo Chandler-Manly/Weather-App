@@ -17,8 +17,7 @@ const getCity = async () => {
     appendWeather.innerHTML += `<div> Feels like: ${Math.round(weatherData.feels_like)}°F</div>`;
     appendWeather.innerHTML += `<div> High: ${Math.round(weatherData.temp_max)}°F</div>`;
     appendWeather.innerHTML += `<div> Low: ${Math.round(weatherData.temp_min)}°F</div>`;
-    appendWeather.innerHTML += `<div> Low: ${response.data.weather.0.description
-  } °F</div > `;
+    appendWeather.innerHTML += `<div> Description: ${response.data.weather[0].description}</div > `;
   } catch (error) {
     console.log(error)
   }
