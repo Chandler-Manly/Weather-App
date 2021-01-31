@@ -1,52 +1,50 @@
-head {
-  width: 100%;
-}
+/* style using flexbox */
 
 header {
-  background-color: #012a4a;
+ background-color: #012a4a;
   width: 100%;
   max-width: 1440px;
   position: relative;
   color: #a9d6e5;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
-}
-body {
-  background-color: #a9d6e5;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-nav {
-  text-align: center;
-  justify-content: space-around;
-}
-
-li { 
-  display: inline;
-}
-
+} 
 h1 {
   font-family: 'Londrina Shadow', cursive;
   text-align: center;
+  font-size: xx-large;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #a9d6e5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-  background-color: #012a4a;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 15%;
-  text-align: center;
-  color: #a9d6e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #012a4a;
+    width: 100%;
+    max-width: 1440px;
+    color: #a9d6e5;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #footer-images {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
 
 img {
@@ -59,46 +57,44 @@ img {
 
 button {
   align-content: center;
-  width: 80px;
-  text-align: left;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 input {
   align-self: center;
   width: 500px;
   text-align: left;
-}
-/* style using flexbox */
-#append-data {
-  border: 15px solid;
   margin: 0 auto;
-
+  
 }
-
+/* container with elements inside */
+#append-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 300px solid black;
+  margin: 0 auto;
+  font-size: large;
+}
 
 /* media query for iPad Pro 1024x1366 */
-
 @media screen and (max-width: 1024px){
   header {
     font-size: x-large;
   }
   h1 {
-    font-size: xx-large%;
-  }
-  body {
-    background-color: cyan;
+    font-size: xx-large;
   }
 }
 
 /* media query for iphone X 375x812 */
-
 @media screen and (max-width: 375px){
   header {
     max-width: 375px;
     width: 100%;
-  }
-  body {
-    background-color: cyan;
+    font-size: medium;
   }
   input {
     width: 200px;
