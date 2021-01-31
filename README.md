@@ -115,7 +115,7 @@ const getCity = async () => {
     let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${API_KEY_TWO}`)
     console.log(response)
     let weatherData = response.data.main
-    appendWeather.innerHTML += `<div>The temperature in ${input.value} is ${weatherData.temp + `°F`}</div>`
+    appendWeather.innerHTML += `<div>The temperature in ${input.value} is ${weatherData.temp} + `°F`</div>`
   } catch (error) {
     console.log(error)
   }
