@@ -7,7 +7,7 @@
 
 ## API and Data Sample
 
-- [API documentation] (https://openweathermap.org/api)
+- [API documentation](https://openweathermap.org/api)
 
     "weather": [
     {
@@ -36,7 +36,7 @@
 - Text-box to input city names 
 - Search button 
 - Designated area for rendered list
-- [Weather-App Wireframes] (https://miro.com/app/board/o9J_lXQi7mo=/)
+- [Weather-App Wireframes](https://miro.com/app/board/o9J_lXQi7mo=/)
  
 
 #### MVP 
@@ -65,7 +65,7 @@
 
 ## Priority Matrix
 
-- [Weather-App Priority Matrix] (https://miro.com/app/board/o9J_lXQ3F1k=/)
+- [Weather-App Priority Matrix](https://miro.com/app/board/o9J_lXQ3F1k=/)
 
 ## Timeframes
 
