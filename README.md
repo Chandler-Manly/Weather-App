@@ -9,49 +9,26 @@
 
 - API documentation https://openweathermap.org/api
 
-    "coord": {
-        "lon": -71.0598,
-        "lat": 42.3584
-    },
     "weather": [
-        {
-            "id": 801,
-            "main": "Clouds",
-            "description": "few clouds",
-            "icon": "02d"
-        }
+    {
+    "id": 801,
+    "main": "Clouds",
+    "description": "few clouds",
+    "icon": "02d"
+    }
     ],
     "base": "stations",
     "main": {
-        "temp": 274.43,
-        "feels_like": 265.94,
-        "temp_min": 273.15,
-        "temp_max": 275.37,
-        "pressure": 1017,
-        "humidity": 25
-    },
-    "visibility": 10000,
-    "wind": {
-        "speed": 7.2,
-        "deg": 320,
-        "gust": 12.35
+    "temp": 274.43,
+    "feels_like": 265.94,
+    "temp_min": 273.15,
+    "temp_max": 275.37,
+    "pressure": 1017,
+    "humidity": 25
     },
     "clouds": {
-        "all": 20
-    },
-    "dt": 1611609606,
-    "sys": {
-        "type": 1,
-        "id": 3486,
-        "country": "US",
-        "sunrise": 1611576246,
-        "sunset": 1611611333
-    },
-    "timezone": -18000,
-    "id": 4930956,
-    "name": "Boston",
-    "cod": 200
-
+    "all": 20
+    }
 
 ## Wireframes
 
