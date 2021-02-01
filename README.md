@@ -94,8 +94,7 @@
       console.log(error)
       }
     }
-
-getCity()
+    getCity()
 
 ## Change Log
 - Included more weather data to each search request 
