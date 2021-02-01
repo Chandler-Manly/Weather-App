@@ -1,9 +1,9 @@
-# 
+#
 # Weather-App Overview
 
 ## Description
 
-- Weather-App allows users to input their city name and retrieve current weather information. 
+- Weather-Now allows users to input their city name and retrieve current weather information. 
 
 ## API and Data Sample
 
@@ -84,7 +84,7 @@
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Complete |
 |Jan 28| Review Async /Axios lecture and create form  | Complete |
 |Jan 29| MVP | Complete |
-|Feb 1| Presentations/Project Submission | Incomplete |
+|Feb 1| Presentations/Project Submission | Complete |
 
 ## Priority Matrix
 
@@ -97,29 +97,26 @@
 | Create HTML, CSS, and Javascript files and Pseudo-Code Logic | H | 4 hrs| 3 hrs |
 | Create async function and fetch weather data from api  | H | 5hrs| 12hrs |
 | Add weather-specific images  | L | 4.5hrs| .5hr |
-| Basic styling with CSS and flex-box | L | 4.5hrs| ??? |
+| Basic styling with CSS and flex-box | L | 4.5hrs| 5hrs |
 | Advanced styling: image display and removal | H | 5hrs| 3hrs |
 | Add content to HTML tags | L | 4.5hrs| 3hrs |
-| Pseudo-code Recommendation Logic in JS | L | 4.5hrs| 3hrs |
-| Total | H | 32hrs| 29hrs |
+| Pseudo-code Recommendation Logic in JS | L | 4.5hrs| 5hrs |
+| Total | H | 32hrs| 31.5hrs |
 
 ## Code Snippet
 
-const API_KEY_TWO = '1a012b94443d511ac871535b64ac2706'
-const input = document.querySelector('input')
+    let appendWeather = document.getElementById('append-weather')
 
-let appendWeather = document.getElementById('append-weather')
-
-const getCity = async () => {
-  try {
-    let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${API_KEY_TWO}`)
-    console.log(response)
-    let weatherData = response.data.main
-    appendWeather.innerHTML += `<div>The temperature in ${input.value} is ${weatherData.temp} + `°F`</div>`
-  } catch (error) {
-    console.log(error)
-  }
-}
+    const getCity = async () => {
+      try {
+      let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${API_KEY_TWO}`)
+      console.log(response)
+      let weatherData = response.data.main
+      appendWeather.innerHTML += `<div>The temperature in ${input.value} is ${weatherData.temp} + `°F`</div>`
+      } catch (error) {
+      console.log(error)
+      }
+    }
 
 getCity()
 
