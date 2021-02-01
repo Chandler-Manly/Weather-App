@@ -10,33 +10,33 @@
 - [API documentation](https://openweathermap.org/api)
 
     "weather": [
-    {
-    "id": 801,
-    "main": "Clouds",
-    "description": "few clouds",
-    "icon": "02d"
-    }
-    ],
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02d"
+      }],
     "base": "stations",
-    "main": {
-    "temp": 274.43,
-    "feels_like": 265.94,
-    "temp_min": 273.15,
-    "temp_max": 275.37,
-    "pressure": 1017,
-    "humidity": 25
-    },
+    "main": 
+      {
+        "temp": 274.43,
+        "feels_like": 265.94,
+        "temp_min": 273.15,
+        "temp_max": 275.37,
+        "pressure": 1017,
+        "humidity": 25
+      },
     "clouds": {
     "all": 20
-    }
+      }
 
 ## Wireframes
 
-- Weather-App across the banner 
+- Weather-Now across the banner 
 - Text-box to input city names 
 - Search button 
 - Designated area for rendered list
-- [Weather-App Wireframes](https://miro.com/app/board/o9J_lXQi7mo=/)
+- [Weather-Now Wireframes](https://miro.com/app/board/o9J_lXQi7mo=/)
  
 
 #### MVP 
@@ -65,7 +65,7 @@
 
 ## Priority Matrix
 
-- [Weather-App Priority Matrix](https://miro.com/app/board/o9J_lXQ3F1k=/)
+- [Weather-Now Priority Matrix](https://miro.com/app/board/o9J_lXQ3F1k=/)
 
 ## Timeframes
 
@@ -100,3 +100,4 @@ getCity()
 ## Change Log
 - Included more weather data to each search request 
 - Added additional media query to account for tablets (e.g. Ipads)
+- Changed App name from Weather-App to Weather-Now
