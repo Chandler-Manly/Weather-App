@@ -11,25 +11,25 @@
 - [API documentation](https://openweathermap.org/api)
 
     "weather": [
-      {
+    {
         "id": 801,
         "main": "Clouds",
         "description": "few clouds",
         "icon": "02d"
       }],
-    "base": "stations",
-    "main": 
-      {
+        "base": "stations",
+        "main": 
+    {
         "temp": 274.43,
         "feels_like": 265.94,
         "temp_min": 273.15,
         "temp_max": 275.37,
         "pressure": 1017,
         "humidity": 25
-      },
-    "clouds": {
-    "all": 20
-      }
+    },
+        "clouds": {
+        "all": 20
+    }
 
 ## Wireframes
 
