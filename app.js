@@ -2,6 +2,7 @@
 const API_KEY_TWO = '1a012b94443d511ac871535b64ac2706'
 const input = document.querySelector('input')
 let appendWeather = document.getElementById('append-weather')
+let appendAttire = document.getElementById('attire-recommendation')
 
 // Core functionality: here's
 const getCity = async () => {
@@ -19,6 +20,9 @@ const getCity = async () => {
     appendWeather.innerHTML += `<div> High: ${Math.round(weatherData.temp_max)}°F</div>`;
     appendWeather.innerHTML += `<div> Low: ${Math.round(weatherData.temp_min)}°F</div>`;
     appendWeather.innerHTML += `<div> Description: ${response.data.weather[0].description}</div > `;
+
+    // Attire Rec
+  
   } catch (error) {
     console.log(error)
   }
@@ -35,3 +39,9 @@ function removeWeatherData() {
     weatherContainer.removeChild(weatherContainer.lastChild);
   }
 }
+
+// function attireRec() {
+//   if (`${Math.round(weatherData.temp)} > 20`) {
+//     appendAttire.innerHTML += '<div>May need a jacket</div>';
+//   }
+// };
