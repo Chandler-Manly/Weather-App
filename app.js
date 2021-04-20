@@ -38,7 +38,6 @@ const getCity = async () => {
     console.log(error)
   }
 }
-// 1.21
 
 // This is my event listener which triggers getCity function
 const button = document.querySelector('button')
