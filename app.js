@@ -12,13 +12,12 @@ let appendPun = document.getElementById('pun-of-the-day-recommendation')
 // Core functionality: here's
 const getCity = async () => {
   try {
-    removeWeatherData()
+    removeWeatherData();
+    removeAttire();
     let response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${API_KEY_TWO}`)
-    console.log(response)
     let weatherData = response.data.main
     appendWeather.innerHTML += `<div> City Name: ${input.value}</div>`;
 
-    //  Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
     // This is where the data is collected and grouped together.
     appendWeather.innerHTML += `<div> Current Temp: ${Math.round(weatherData.temp)}°F</div>`;
     appendWeather.innerHTML += `<div> Feels like: ${Math.round(weatherData.feels_like)}°F</div>`;
@@ -27,12 +26,20 @@ const getCity = async () => {
     appendWeather.innerHTML += `<div> Description: ${response.data.weather[0].description}</div > `;
 
     // Attire Rec
-    appendAttire.innerHTML += `<div> Suns out Guns out</div>`;
+    function attireRec() {
+      if (`${Math.round(weatherData.temp)} > 75`) {
+        appendAttire.innerHTML += '<div>Attire Recommendation: Pack your bathing suit!</div>';
+      } 
+      else {
+        appendAttire.innerHTML += '<div>Attire Recommendation: Bundle up! Comforters and a hot cup of coffee!</div>';
+      }
+    };
+    attireRec()
   
   // Meal Rec
-  appendMeal.innerHTML += `<div> Suns out Guns out</div>`;
+  // appendMeal.innerHTML += `<div> Suns out Guns out</div>`;
   // Pun-of-the-day
-  appendPun.innerHTML += `<div> Suns out Guns out</div>`;
+  // appendPun.innerHTML += `<div> Suns out Guns out</div>`;
 
   } catch (error) {
     console.log(error)
@@ -50,9 +57,23 @@ function removeWeatherData() {
     weatherContainer.removeChild(weatherContainer.lastChild);
   }
 }
+function removeAttire() {
+  const attireContainer = document.querySelector('#attire-recommendation')
+  while (attireContainer.lastChild) {
+    attireContainer.removeChild(attireContainer.lastChild);
+  }
+}
 
-// function attireRec() {
-//   if (`${Math.round(weatherData.temp)} > 20`) {
-//     appendAttire.innerHTML += '<div>May need a jacket</div>';
-//   }
-// };
+
+
+
+{/* <div>
+<i class="far fa-snowflake"></i>
+  <i class="fas fa-cloud"></i>
+  <i class="fas fa-sun"></i>
+  <i class="fas fa-cloud-showers-heavy"></i>
+  <i class="fas fa-wind"></i>
+  <i class="fas fa-smog"></i>
+  <i class="fas fa-bolt"></i>  
+<i class="fas fa-cloud-rain"></i>
+</div> */}
