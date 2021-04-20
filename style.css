@@ -1,10 +1,16 @@
 header {
+  display: flex;
+  flex-direction: row;
   background-image: linear-gradient(#012a4a, #0e5c97);
   position: relative;
   color: #a9d6e5;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   width: 100%;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  
 } 
 /* Imported font from Google */
 h1 {
@@ -82,7 +88,10 @@ color: #012a4a;
 background-color: whitesmoke;
 
 }
-
+img {
+  width:125px;
+  height:125px;
+}
 /* container with elements inside */
 #append-data {
   margin-top: 20px;
