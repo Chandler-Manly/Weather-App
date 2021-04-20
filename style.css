@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #a9d6e5;
+  /* background-color: #a9d6e5; */
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -33,6 +33,7 @@ footer {
     bottom: 0;
     left: 5px;
     right: 10px;
+    max-width: 900px;
     position: fixed;
     background-color: #012a4a;
     color: #a9d6e5;
@@ -49,11 +50,20 @@ input {
 }
 
 button {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   width: 150px;
   text-align: center;
+  color: #012a4a;
+  background-color: whitesmoke;
+  padding: 5px;
+}
+
+button:hover {
+background-color: #012a4a;
+color: whitesmoke;
+
 }
 
 /* container with elements inside */
@@ -63,6 +73,10 @@ button {
   justify-content: center;
   border: 300px solid black;
   font-size: large;
+}
+
+.about-us{
+  max-width: 500px;
 }
 
 /* media query for iPad Pro (1024x1366) */

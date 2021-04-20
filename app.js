@@ -1,14 +1,19 @@
 // const API_KEY = '7978f186187864ed7fc387296b8ece2c'
+// https://cors-anywhere.herokuapp.com/
 const API_KEY_TWO = '1a012b94443d511ac871535b64ac2706'
 const input = document.querySelector('input')
 let appendWeather = document.getElementById('append-weather')
 let appendAttire = document.getElementById('attire-recommendation')
+let appendMeal = document.getElementById('meal-recommendation')
+let appendPun = document.getElementById('pun-of-the-day-recommendation')
+
+
 
 // Core functionality: here's
 const getCity = async () => {
   try {
     removeWeatherData()
-    let response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${API_KEY_TWO}`)
+    let response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${API_KEY_TWO}`)
     console.log(response)
     let weatherData = response.data.main
     appendWeather.innerHTML += `<div> City Name: ${input.value}</div>`;
@@ -22,11 +27,18 @@ const getCity = async () => {
     appendWeather.innerHTML += `<div> Description: ${response.data.weather[0].description}</div > `;
 
     // Attire Rec
+    appendAttire.innerHTML += `<div> Suns out Guns out</div>`;
   
+  // Meal Rec
+  appendMeal.innerHTML += `<div> Suns out Guns out</div>`;
+  // Pun-of-the-day
+  appendPun.innerHTML += `<div> Suns out Guns out</div>`;
+
   } catch (error) {
     console.log(error)
   }
 }
+// 1.21
 
 // This is my event listener which triggers getCity function
 const button = document.querySelector('button')
