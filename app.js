@@ -50,6 +50,9 @@ const getCity = async () => {
 const button = document.querySelector('button')
 button.addEventListener('click', getCity)
 
+const button = document.querySelector('button')
+button.addEventListener('click', getCity)
+
 // This function refreshes the data and is embedded in the getCity function and is set off by the event listener.
 function removeWeatherData() {
   const weatherContainer = document.querySelector('#append-weather')
